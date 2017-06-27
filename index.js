@@ -13,15 +13,13 @@ mongoose.connect(config.uri, (err)=>{
   }
 });
 
-// Provide static directory for frontend
-app.use(express.static(__dirname + '/client/dist/'));
 
-// Connect server to Angular 2 Index.html
-app.get('*', (req, res) => {
+app.use(express.static(__dirname +'/clien/dist'));
+//tutte le route invioano da index.html
+app.get('*', (req, res)=>{
   res.sendFile(path.join(__dirname + '/client/dist/index.html'));
 });
 
-
-app.listen(8080,()=>{
-  console.log('server running on port 8080')
+app.listen(8080 ,() => {
+  console.log('server running on port 8080');
 });
