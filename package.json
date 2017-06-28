@@ -24,7 +24,11 @@
   },
   "homepage": "https://github.com/Andreamoon/Mean-Stack-with-Angular2-tutorial#readme",
   "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.17.2",
+    "cors": "^2.8.3",
     "express": "^4.15.3",
-    "mongoose": "^4.11.0"
+    "jsonwebtoken": "^7.4.1",
+    "mongoose": "^4.10.8"
   }
 }
